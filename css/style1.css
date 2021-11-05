@@ -1,0 +1,211 @@
+html, body{
+min-height:100%;
+}
+
+* {
+box-sizing: inherit;
+padding: 0;
+margin: 0;
+}
+
+body {
+font-weight: 700;
+background: linear-gradient(to bottom, hsl(240, 78%, 98%) 0%,hsl(240, 78%, 98%) 100%) no-repeat; 
+font-size: 15px;
+}
+.bgtop {
+background-repeat: no-repeat;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -2;
+}
+
+.bgbottom {
+background-repeat: no-repeat;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -2;
+}
+
+.topblock{
+padding-top:50px;
+text-align:center;
+}
+.buttonblock{
+padding-top:50px;
+text-align:center;
+justify-content:center;
+}
+.buttontext{
+padding-top:5px;
+padding-left:10px;
+padding-right:10px;
+font-weight: 700;
+font-size: 15px;
+color:gray;
+}
+.money{
+font-size: 3.5rem;
+font-weight: 700;
+}
+.gr{
+opacity: 0.8;
+}
+
+.icon{
+font-size: 2rem;
+font-weight: 700;
+padding-right:10px;
+padding-top:1000px;
+}
+
+/* Main blocks code */
+
+.mainblock{
+position:relative;
+padding-top:50px;
+text-align:center;
+width:1000px;
+height:600px;
+}
+.leftblock{
+position:absolute;
+padding-left:40px;
+padding-right:40px;
+padding-top:25px;
+padding-bottom:25px;
+width:300px;
+height:auto;
+right:805px;
+top:65px;
+border:1px solid white;
+background-color:white;
+font-weight: 700;
+font-size: 15px;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+}
+.centerblock{
+position:absolute;
+padding-left:40px;
+padding-right:40px;
+padding-top:50px;
+padding-bottom:25px;
+width:300px;
+height:445px;
+top:40px;
+right:505px;
+border-radius:10px;    
+background: linear-gradient(to bottom, hsl(236, 72%, 79%) 0%,hsl(237, 63%, 64%) 100%) no-repeat;
+font-weight: 700;
+font-size: 15px;
+}
+.rightblock{
+position:absolute;
+padding-left:40px;
+padding-right:40px;
+padding-top:25px;
+padding-bottom:25px;
+width:300px;
+height:auto;
+right:205px;
+top:65px;
+border:1px solid white;
+background-color:white;
+font-weight: 700;
+font-size: 15px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+}
+.btn.btnlearnmorer{
+background: linear-gradient(45deg, #a3a8f0, #696fdd);
+text-decoration: none;
+align-self:center;
+width:200px;
+color: white;
+}
+.btn.btnlearnmorer:hover {
+background: white;
+color:#696fdd;
+border: 1px solid #696fdd;
+}
+.btn.btnlearnmorec{
+background: linear-gradient(45deg, white, white);
+text-decoration: none;
+align-self:center;
+width:200px;
+color: #696fdd;
+}
+.btn.btnlearnmorec:hover{
+background: #848cf8;
+text-decoration: none;
+border: 1px solid #fff;
+color: white;
+}
+
+.bram{
+position:relative;
+margin:0 auto;
+width:650px;
+}
+
+/* Code for button*/
+
+.switch {
+position: relative;
+display: inline-block;
+height: 28px;
+width: 54px;
+}
+.switch input {
+width: 0;
+opacity: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(#a3a8f0, #696fdd);
+transition: 0.4s;
+}
+.slider:hover {
+opacity: 0.5;
+}
+.slider:before {
+position: absolute;
+content: "";
+width: 20px;
+height: 20px;
+left: 30px;
+bottom: 4px;
+background-color: white;
+transition: 0.4s;
+}
+
+input:checked + .slider {
+background-color: #2196f3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+transform: translateX(-26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
